@@ -1,6 +1,9 @@
 var uniqueInOrder=function(iterable){
+    var arr = iterable.split(" ");
+    console.log(arr);
+    
     
   }
-
-  console.log();
+  uniqueInOrder('AAAABBBCCDAABBB');
+  //console.log(uniqueInOrder('AAAABBBCCDAABBB'));
   
