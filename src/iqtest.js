@@ -7,15 +7,17 @@ function iqtest(numbers){
         if(no == 1){
             odd.push(index); 
         }
-        if(no%2) {
-            odd.push(index);
-        }         
-        if(no%2 == 0) {
-            even.push(index);
+        else{
+            if(no%2 != 0) {
+                odd.push(index);
+            }         
+            if(no%2 == 0) {
+                even.push(index);
+            }
         }
     });
     if(odd.length == 1){
-        var p = Number(odd[0]);
+        var p = Number(odd[0]);     
         return p+1;
     }
     if(odd.length > 1) {
@@ -24,4 +26,4 @@ function iqtest(numbers){
     }
 }
 
-console.log(iqtest("1 2 2"));
+console.log(iqtest("2 4 7 8 10"));
